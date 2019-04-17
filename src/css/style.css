@@ -60,11 +60,147 @@ body {
     justify-content: center;
     margin-top: -90px;
 }
-.buttonContainer{
+
+.unique_piano{
     display: flex;
-    justify-content: flex-end;
+    width: 80%;
+    margin-left: 58px;
+    /* flex-direction: ; */
+    justify-content: space-evenly;
+    text-align: center; 
+    align-items: center;
 }
 
+.image_piano {
+    /* border: solid 1px red; */
+    margin-top: 110px;
+    /* margin-right: 30px; */
+    /* margin-left: 600px;  */
+    width: 518px;
+    height: auto;  
+}
+
+.paragraph_piano {
+    margin-top: 120px;
+    width: 340px;
+    height: 100px;
+    /* margin-left: 15px; */
+    font-family: Roboto;
+    font-weight: bold;  
+    font-size: 45px;
+    /* border: solid 1px red;  */
+} 
+
+.unique_span {
+    -webkit-text-stroke: 1px #2C3BC3;
+    color: white;
+}
+
+.unique_homme {
+    display: flex;
+    width: 80%;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+    margin-left: 30px;
+    justify-content: space-evenly;
+}
+.paragraph_homme {
+    margin-top: 120px;
+    width: 400px;
+    height: 100px;
+    /* margin-left: 15px; */
+    font-family: Roboto;
+    font-weight: bold;  
+    font-size: 45px;
+    /* border: solid 1px red;  */
+}
+
+.image_homme {
+    width: 518px;
+    height: auto;
+}
+
+.info_user {
+    /* border: 1px solid red; */
+    display: flex;
+    font-family: Roboto;
+    margin-top: 120px;
+    margin-left: 300px;
+    font-size: 60px;
+    font-weight: bold;  
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 55px;
+    margin-left: 15px;
+    width: 180px;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=text]::placeholder {
+    color: #D3D3D3;
+}
+
+.title_video {
+    width: 410px;
+    line-height: 50px;
+    font-size: 50px;
+    font-family: Roboto;
+    font-weight: bold;
+    /* border: red 1px solid; */
+    align-items: center;
+}
+
+.video_span {
+    color: white;
+    -webkit-text-stroke: 1px #2C3BC3;
+}
+
+.text_configurator {
+    margin-top: 45px;
+    margin-left: 45px;
+}
+.span_configurator {
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px #2C3BC3;
+}
+
+.paragraph_configurator {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.specialities {
+    display: flex;
+    align-items: center;
+}
+
+.description_specialities {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.title_specialities {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+.span_specialities {
+color: white;
+-webkit-text-stroke: 1px black;
+}
 .buttonContainer .cta{
     background: none;
     border: none;
@@ -203,29 +339,36 @@ video{
     border: #000000 solid 1px;
    
 }
-
-.testimony{
+.temoignage {
     display: flex;
-    flex-direction: row;
-    color: #000000;
-    margin-top: 100px;
-    justify-content: center;
-    
-}
-.testimonyRight{
-    display: flex;
-    flex-direction: column;
-    background-color: #00072C;
-    color: #FFFFFF;
-    font-size: 50px;
-    text-align: center;
+    font-family: Roboto;
 }
 
-.testimonyRight, .testimonyLeft{
-    width: 50%;
+.title_temoignage {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.testimonyText{
-    width: 100%;
-    text-align: center;
+div > p {
+    margin-bottom: ;
+    font-weight: 100;
+}
+
+.description_temoignage {
+margin-left: 30px;
+
+}
+
+.span_temoignage {
+    color: white;
+    -webkit-text-stroke: 1px #2C3BC3;
+}
+
+.image_temoignage {
+    top: 65px;
+    width: 618px;
+    /* height: 339px; */
+    margin-right: 70px;
 }
