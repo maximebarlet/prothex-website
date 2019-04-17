@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');;
+
+body {
+    box-sizing: border-box;
+}
+
 
 .header{
     display: flex;
     justify-content: center;
+    height: 60px;
+    align-items: center;
 }
 
 .logo{
@@ -14,17 +21,44 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
+    
 }
 
-.picContainer{
-    display: flex;
-    justify-content: center;
+.picContainer {
+    height: 85vh;
+    background: url("./image.jpg") no-repeat;
+    background-size: cover;
+    margin-right: 90px;
+    margin-left: 90px;   
+}   
+
+
+
+.photo {
+    width: 100%;
 }
+
+.titleSection{
+    padding-top: 150px;
+    padding-left: 150px;
+    font-size: 90px;
+    font-family: Roboto;
+    font-weight: 900; 
+}
+
+.titleSection .subtitle{
+    color: #1426CE;
+}
+
+.emoji{
+    width: 90px;
+    height: 90px;
+}
+
 .pictoContainer{
     display: flex;
     justify-content: center;
+    margin-top: -90px;
 }
 .buttonContainer{
     display: flex;
@@ -42,7 +76,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 50px;
-    margin-right: -60px;
+    margin-right: 0px;
     font-family: Roboto;
     font-weight: bold;
 }
@@ -50,7 +84,7 @@
 .specialityPic{
     transform: rotate(-35deg);
     z-index: 0;
-    width:600px;
+    width:550px;
 }
 .specialityTitle{
     z-index: 1;
@@ -74,8 +108,6 @@
 .fabricationContainer{
     background-color: #00072C;
     color: #FFFFFF;
-    margin-left: -107px;
-    margin-right: -107px;
     display: flex;
     flex-direction: column;
     
@@ -102,8 +134,8 @@
 
 .videoContainer{
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    justify-content: flex-end;
+    margin-top: 150px;
 }
 
 .steps{
@@ -113,8 +145,87 @@
 
 li{
     list-style: none;
-    margin-bottom: 30px;
+    margin-top: 150px;
     font-size: 40px;
     font-family: Roboto;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+li p{
+    font-size: 17px;
+    margin-left: 200px;
+    margin-top: 60px;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+li h3{
+    display: flex;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+
+
+.videoSection{
+    display: flex;
+    flex-direction: row;
+    height: 576px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.videoContainer{
+    justify-content: flex-end;
+    
+}
+
+video{
+    width: 700px;
+    height: 425px;
+    justify-content: flex-end;
+}
+
+.overview h3{
+    font-size: 70px;
+}
+
+.configurator{
+    margin-top: 50px;
+    font-size: 50px;
+
+}
+
+.configuratorContainer{
+    justify-content: center;
+    display: flex;
+    border: #000000 solid 1px;
+   
+}
+
+.testimony{
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    margin-top: 100px;
+    justify-content: center;
+    
+}
+.testimonyRight{
+    display: flex;
+    flex-direction: column;
+    background-color: #00072C;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-align: center;
+}
+
+.testimonyRight, .testimonyLeft{
+    width: 50%;
+}
+
+.testimonyText{
+    width: 100%;
+    text-align: center;
 }
