@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="icon" href="css/favicon.ico" />
-    <title>Prothex HomePage</title>
+
+    <title>Welcome on Prothex HomePage</title>
 </head>
 
 <body>
@@ -19,52 +20,50 @@
         <div class="picContainer">
             <div class="titleSection">
                 <h1 class="maintitle">Welcome to the</h1>
-                <h2 class="subtitle">Artists <span><img class="emoji" src="css/emojiartiste.png"></span></h2>
+                <div class="container">
+                    <div id="hidden" class="hidden"></div>
+                    <div id="color" class="shown"></div>
+                    <div id="wait" class="wait"></div>
+                </div>
             </div>
         </div>
         <div class="pictoContainer">
             <img class="picto" src="css/mouse.png">
         </div>
-
         <div class="info_user">
             <p>You are</p>
-            <label><input type="text" placeholder="Alexis"></label>
+            <label><input id="name" type="text" placeholder="Alexis"></label>
+            <input id="submit" type="submit" value="⤶" onclick="getName()">
         </div>
         <div class="interested_user">
             <p>What are you interested in?</p>
         </div>
         <div class="first_checkbox">
-            <input class="styled_checkbox" type="checkbox" id="Travel" name="Travel"checked>
+            <input class="styled_checkbox" type="checkbox" id="Travel" name="Travel">
             <label class="travel" for="Travel">Travel</label>
             <input class="styled_checkbox" type="checkbox" id="Sport" name="Sport">
             <label for="Sport">Sport</label>
-          </div>
-          <div class="second_checkbox">
-                <input class="styled_checkbox" type="checkbox" id="Music" name="Music"checked>
-                <label class="music" for="Music">Music</label>
+        </div>
+        <div class="second_checkbox">
+            <input class="styled_checkbox" type="checkbox" id="Music" name="Music">
+            <label class="music" for="Music">Music</label>
             <input class="styled_checkbox" type="checkbox" id="Art" name="Art">
             <label for="Art">Art</label>
-          </div>
-
+        </div>
         <div class="unique_piano">
             <p class="paragraph_piano">You are <span class="unique_span">unique</span></p>
             <img class="image_piano" src="./css/piano.jpg" alt="piano">
         </div>
-        <img class="disque1" src="./css/disque1.svg" alt="disque1">
         <div class="unique_homme">
             <img class="image_homme" src="./css/image_homme.jpg" alt="image_homme">
             <p class="paragraph_homme"> your prosthesis <span class="unique_span">too</span></p>
         </div>
-        
-        <div class="info_user">
-            <p>By the way, you are</p>
-            <label><input type="text" placeholder="Alexis"></label>
-        </div>
+
 
 
         <div class="videoSection">
             <div class="title_video">
-                <p>Alexis, let's have a <span class="video_span">LOOK</span></p>
+                <span>Ok <span id="userName1"></span>, let's have a <span class="video_span">LOOK</span></p>
             </div>
             <div class="videoContainer">
                 <video class="video" src="css/video.mp4" controls>
@@ -74,44 +73,42 @@
         </div>
         <div class="configurator">
             <div class="text_configurator">
-            <span class="span_configurator">Now</span>
-            <p class="paragraph_configurator">it's your turn, Alexis</p>
+                <span class="span_configurator">Now</span>
+                <span class="paragraph_configurator">it's your turn, <span id="userName2"></span></span>
             </div>
             <div class="configuratorContainer">
-                <img class="configuratorPic" src="css/DSEQEQ.png">
+                    <a href="Configurator3D/index.html">Launch the 3D Configurator</a>
             </div>
-            <img class="disque2" src="./css/disque2.svg" alt="disque2">
         </div>
         <div class="specialities">
-            <img class="image_bras" src="./css/bras.png" alt="bras">
+            <img src="./css/bras.jpg" alt="bras">
             <div>
-            <img class="note" src="./css/note.svg" alt="note">
-            <h2 class="title_specialities"><span class="span_specialities">O</span>ur specialities</h2>
-            <p class="description_specialities">Our partners in the G2M group, a pioneer in the manufacture of prostheses, orthotics and medical equipment, allow us to offer you the best prostheses according to your needs. The production of the components and supplies necessary for the development of a prosthesis is provided by Janton, a company created in 1945 and attached to the group G2M in 2004. The assembly of the prosthesis is provided by CSM, the whole assembly process is available on its website. A group of 15 years of experience to realize your prostheses according to your needs.</p>
-        </div>
+                <h2 class="title_specialities"><span class="span_specialities">O</span>ur specialities</h2>
+                <p class="description_specialities">Our partners in the G2M group, a pioneer in the manufacture of
+                    prostheses, orthotics and medical equipment, allow us to offer you the best prostheses
+                    according to
+                    your needs. The production of the components and supplies necessary for the development of a
+                    prosthesis is provided by Janton, a company created in 1945 and attached to the group G2M in
+                    2004.
+                    The assembly of the prosthesis is provided by CSM, the whole assembly process is available on
+                    its
+                    website. A group of 15 years of experience to realize your prostheses according to your needs.</p>
+            </div>
         </div>
         <div class="temoignage">
-            <div class="description_temoignage">
-            <h2 class="title_temoignage"><span class="span_temoignage">They</span> trusted us</h2>
-            <p>Après mon accident de moto en 2017, j’ai été amputé du bras gauche à 65%.<br></p>
-            <p>Je ne me voyais pas poursuivre ma vie sans être autonome, même dans les tâches les plus insignifiantes du quotidien. Depuis novembre 2018, je revie littéralement grâce à ma prothèse</p>
-        </div>
-            <img class="image_temoignage" src="./css/sdsdsd.png" alt="homme">
+            
+            <img class="image_temoignage" src="./css/prothex_slider.gif" alt="User's Testimony">
         </div>
 
-
+        <script type="text/javascript" src="js/app.js"></script>
 
     </main>
     <footer>
-         <div class="contact">
-             <img class="logo_footer" src="css/Logo.svg">
-             <span class="mail">contacts@prothex.com</span>
-         </div>
+        <div class="contact">
+            <img class="logo_footer" src="css/Logo.svg">
+            <span class="mail">contacts@prothex.com</span>
+        </div>
     </footer>
-            
-            
-            
-                    
 </body>
 
 </html>

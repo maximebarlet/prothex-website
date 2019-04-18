@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Prothex 3D configurator</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script>
+    var material_1 = 0;
+    var material_2 = 1;
+    var material_3 = 2;
+
+    function UpdateData(info) {
+      material_1 = info.Mat1;
+      material_2 = info.Mat2;
+      material_3 = info.Mat3;
+    }
+  </script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/24.json", {
+      onProgress: UnityProgress
+    });
+  </script>
+</head>
+
+
+
+<body>
+  <svg class="logo--configurateur" width="372" height="51" viewBox="0 0 372 51" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M283.469 0.586212H316.296V3.9569H283.469V0.586212Z" fill="black" />
+    <path d="M283.469 23.5948H316.296V26.9655H283.469V23.5948Z" fill="black" />
+    <path d="M283.469 47.6293H316.296V51H283.469V47.6293Z" fill="black" />
+    <path d="M184.547 0.879307H188.21V50.2672H184.547V0.879307Z" fill="black" />
+    <path d="M166.228 0.439651H206.676V3.81034H166.228V0.439651Z" fill="black" />
+    <path d="M0.477539 30.6453H4.21939V50.2673H0.477539V30.6453Z" fill="black" />
+    <path
+      d="M0.477539 33.9852H22.0971C31.2818 33.9852 38.7275 26.5086 38.7275 17.2857C38.7275 8.06284 31.2818 0.586212 22.0971 0.586212H1.00187L0.949437 3.92611H22.0971C29.4449 3.92611 35.4014 9.90741 35.4014 17.2857C35.4014 24.664 29.4449 30.6453 22.0971 30.6453H0.529972L0.477539 33.9852Z"
+      fill="black" />
+    <path d="M80.5734 30.2701L77.1323 31.7139L90.7194 50.2639L93.869 50.2793L93.8577 47.9652L80.5734 30.2701Z"
+      fill="black" />
+    <path d="M55.4346 30.6453H59.1908V50.2672H55.4346V30.6453Z" fill="black" />
+    <path
+      d="M55.4346 33.9852H77.1369C86.3569 33.9852 93.8311 26.5086 93.8311 17.2857C93.8311 8.06284 86.3569 0.586212 77.1369 0.586212H55.9609L55.9083 3.92611H77.1369C84.5129 3.92611 90.4923 9.90741 90.4923 17.2857C90.4923 24.664 84.5129 30.6453 77.1369 30.6453H55.4872L55.4346 33.9852Z"
+      fill="black" />
+    <path d="M219.865 0.439655H223.822V51H219.865V0.439655Z" fill="black" />
+    <path d="M257.089 0H261.046V50.5603H257.089V0Z" fill="black" />
+    <path d="M219.865 27.1121V23.1552H261.046V27.1121H219.865Z" fill="black" />
+    <path d="M327.459 51L364.968 0.586212H369.175L331.667 51H327.459Z" fill="black" />
+    <path d="M367.181 51L329.671 0.586212H333.878L371.389 51H367.181Z" fill="black" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M154.344 21.6868L152.48 20.1672C152.321 20.0368 152.085 20.0607 151.955 20.2206C151.824 20.3805 151.848 20.6159 152.008 20.7463L154.615 22.8721C154.688 22.9319 154.777 22.9592 154.865 22.9559C154.954 22.96 155.044 22.9327 155.118 22.8722L157.725 20.7463C157.885 20.6159 157.909 20.3805 157.778 20.2206C157.648 20.0607 157.413 20.0368 157.253 20.1672L155.236 21.8121V21.3965C155.236 21.1029 155.23 20.8098 155.217 20.5172C155.056 16.6806 153.839 12.9557 151.691 9.75353C149.38 6.30718 146.095 3.62109 142.252 2.03491C139.5 0.899234 136.551 0.363932 133.6 0.448266L133.601 0.648057C133.602 0.874799 133.603 1.10195 133.607 1.32775C136.441 1.24417 139.274 1.75703 141.916 2.84771C145.599 4.36773 148.747 6.94157 150.961 10.2433C152.867 13.0862 154.008 16.359 154.288 19.7482L154.344 21.6868ZM149.52 28.6509C149.52 38.3542 142.949 46.5226 134.013 48.9483H152.451V50.2672H107.46V48.9483H122.967C114.032 46.5226 107.46 38.3542 107.46 28.6509C107.46 17.0362 116.875 7.62069 128.49 7.62069C140.105 7.62069 149.52 17.0362 149.52 28.6509ZM128.196 47.3362C138.516 47.3362 146.882 38.9705 146.882 28.6508C146.882 18.3312 138.516 9.9655 128.196 9.9655C117.877 9.9655 109.511 18.3312 109.511 28.6508C109.511 38.9705 117.877 47.3362 128.196 47.3362Z"
+      fill="black" />
+  </svg>
+
+  <a class="retour" href="../index.html">Go back to the home page</a>
+
+
+
+  <div class="webgl-content">
+    <div id="gameContainer" style="width: 1160px; height: 550px"></div>
+    <div class="footer">
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">Full screen</div>
+    </div>
+  </div>
+</body>
+
+</html>
